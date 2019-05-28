@@ -650,3 +650,4 @@ local.properties
 .vscode
 secrets/*
 keys/*
+./test-data
