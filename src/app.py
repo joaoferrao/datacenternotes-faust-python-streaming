@@ -6,7 +6,7 @@ app = faust.App(id="test",broker="kafka://localhost:9092",store="memory://")
 def main() -> None:
     app.main()
 
-# Input topic, NOT managed by Faust.
+# Input topic, NOT managed by Faust. Marked
 input_topic = app.topic('input', internal=False, partitions=1, value_type=str)
 
 # Faust will create this topic for us.

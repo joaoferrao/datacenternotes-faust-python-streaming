@@ -12,5 +12,5 @@ kafka-down:
 # Launch Faust
 ################################################################################
 
-app:
-	@python 
+run-app:
+	@python -m src worker -l info
